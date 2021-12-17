@@ -1,5 +1,14 @@
 function sumOfNumsWithinARange(nums, start, end) {
-  // Insert code here;
+    let tally = 0;
+
+    for (const el of nums){
+      if (el >= start && el <= end){
+        tally++;
+      }
+    }
+
+    return tally;
+
 }
 
 // Do not edit this line;
